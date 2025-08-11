@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Spacebar Circle Pop — Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <aside class="sidebar">
+      <h1>Circle Pop</h1>
+      <p class="muted">Press <strong>Space</strong> or tap anywhere in the play area.</p>
+
+      <div class="panel">
+        <label>Player name
+          <input id="playerName" placeholder="Enter name (optional)">
+        </label>
+
+        <label>Duration
+          <select id="durationSelect">
+            <option value="10">10s</option>
+            <option value="20">20s</option>
+            <option value="30" selected>30s</option>
+            <option value="45">45s</option>
+            <option value="60">60s</option>
+          </select>
+        </label>
+
+        <div class="controls">
+          <button id="startBtn" class="primary">Start</button>
+          <button id="pauseBtn" class="ghost">Pause</button>
+          <button id="resetBtn" class="ghost">Reset</button>
+        </div>
+
+        <div class="stats">
+          <div>Presses <span id="presses">0</span></div>
+          <div>Time <span id="timeDisplay">00:00.0</span></div>
+          <div>Avg CPS <span id="cps">0.00</span></div>
+        </div>
+
+        <div class="setting">
+          <label><input type="checkbox" id="glitter" checked> Glitter speckles</label>
+        </div>
+
+        <div class="setting">
+          <div>Min size <input id="minSize" type="range" min="6" max="40" value="12"></div>
+          <div>Max size <input id="maxSize" type="range" min="30" max="200" value="110"></div>
+        </div>
+
+        <div style="margin-top:12px">
+          <button id="saveScore" class="primary">Save Score Now</button>
+        </div>
+      </div>
+
+      <div class="leaderboard">
+        <h2>Leaderboard (Top 5)</h2>
+        <div id="leaderList"></div>
+      </div>
+
+      <p class="small muted">Leaderboard saved in your browser (localStorage). You can publish this folder directly.</p>
+    </aside>
+
+    <main class="play-area">
+      <canvas id="stage"></canvas>
+      <div id="hint">Press Space or Tap anywhere</div>
+
+      <!-- Game Over Modal -->
+      <div id="gameOver" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="gameOverTitle">
+        <div class="modal-card">
+          <h2 id="gameOverTitle">Time's up!</h2>
+          <p>Your score: <strong id="finalScore">0</strong></p>
+          <label>Save as:
+            <input id="modalName" placeholder="Player name">
+          </label>
+          <div style="margin-top:12px">
+            <button id="modalSave" class="primary">Save</button>
+            <button id="modalClose" class="ghost">Close</button>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
