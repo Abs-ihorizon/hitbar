@@ -26,6 +26,8 @@ const finalScoreEl = document.getElementById('finalScore');
 const modalName = document.getElementById('modalName');
 const modalSave = document.getElementById('modalSave');
 const modalClose = document.getElementById('modalClose');
+const app = firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
 
 // state
 let presses = 0;
