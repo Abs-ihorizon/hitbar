@@ -266,5 +266,3 @@ modalClose.addEventListener('click', ()=> gameOverModal.classList.add('hidden'))
 
 // initial render
 renderLeaderboard();
-
-meri ye file ha isme add krdo chezain
