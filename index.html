@@ -1,42 +1,43 @@
 <!doctype html>
 <html lang="en">
 <head>
-  
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-3F1FN089XB');
-</script>
-  <meta charset="utf-8" />
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3F1FN089XB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3F1FN089XB');
+  </script>
+
+  <!-- Google AdSense -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1251972867338065"
      crossorigin="anonymous"></script>
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="google-adsense-account" content="ca-pub-1251972867338065">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
   <meta name="google-site-verification" content="hNLmSZnyu0d5Thy68u5ZuuDrln8B6rlpDA5BREQiVnw" />
-  <!-- Open Graph (Facebook, Instagram, LinkedIn) -->
+
+  <!-- SEO -->
+  <title>Hitbar - Fun Spacebar Press Game with Leaderboard</title>
+  <meta name="description" content="Play Hitbar, a fun spacebar press game that creates colorful circles. Compete with friends on the leaderboard and test your CPS (Clicks Per Second).">
+  <link rel="icon" type="image/png" href="hitbar-logo-only.png">
+
+  <!-- Open Graph -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="Hitbar - Fun Spacebar Press Game">
+  <meta property="og:title" content="Hitbar - Spacebar Press Game">
   <meta property="og:description" content="Press spacebar to create colorful circles and compete on the leaderboard. Play now!">
   <meta property="og:url" content="https://hitbar.xyz">
   <meta property="og:image" content="https://hitbar.xyz/game-preview.png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="Hitbar">
-  
-  <!-- Twitter Cards -->
+
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Hitbar - Fun Spacebar Press Game">
   <meta name="twitter:description" content="Press spacebar to create colorful circles and compete on the leaderboard. Play now!">
   <meta name="twitter:image" content="https://hitbar.xyz/game-preview.png">
-  <meta name="twitter:site" content="@hitbar"> <!-- optional, agar Twitter handle ho -->
-  <meta name="twitter:creator" content="@hitbar"> <!-- optional -->
 
-  <title>Hitbar - Fun Spacebar Press Game with Colorful Circles & Leaderboard</title>
-  <meta name="description" content="Play Hitbar, a fun spacebar press game that creates colorful circles. Challenge friends with the leaderboard and see who scores highest!">
-  <link rel="icon" type="image/png" href="hitbar-logo-only.png">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -91,12 +92,12 @@
         <div id="leaderList"></div>
       </div>
 
-      <p class="small muted">Leaderboard saved in your browser (localStorage). You can publish this folder directly.</p>
-        <!-- New link to info page -->
-  <p style="margin-top:15px;">
-    <a href="what-is-hitbar.html" class="primary" style="display:block;text-align:center;">What is Hitbar?</a>
-  </p>
+      <p class="small muted">Leaderboard is saved in your browser (localStorage). Compete with yourself & friends.</p>
 
+      <!-- Info Page -->
+      <p style="margin-top:15px;">
+        <a href="what-is-hitbar.html" class="primary" style="display:block;text-align:center;">What is Hitbar?</a>
+      </p>
     </aside> 
 
     <main class="play-area">
@@ -119,10 +120,20 @@
       </div>
     </main>
   </div>
-<footer style="font-style: italic; color: gray; text-align: right; font-size: 14px;">
-    Copyright © Hitbar 
-    2025 All rights reserved.
-</footer>
+
+  <!-- Footer -->
+  <footer style="background:#161b22; color:#bbb; text-align:center; padding:20px; margin-top:40px; font-size:14px;">
+    <div style="margin-bottom:10px;">
+      <a href="index.html" style="color:#58a6ff; margin:0 10px; text-decoration:none;">Home</a> |
+      <a href="about.html" style="color:#58a6ff; margin:0 10px; text-decoration:none;">About Us</a> |
+      <a href="contact.html" style="color:#58a6ff; margin:0 10px; text-decoration:none;">Contact Us</a> |
+      <a href="privacy.html" style="color:#58a6ff; margin:0 10px; text-decoration:none;">Privacy Policy</a> |
+      <a href="terms.html" style="color:#58a6ff; margin:0 10px; text-decoration:none;">Terms & Conditions</a>
+    </div>
+    <div>
+      © 2025 <b>Hitbar</b>. All rights reserved.
+    </div>
+  </footer>
 
   <script src="app.js"></script>
 </body>
